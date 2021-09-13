@@ -7,6 +7,7 @@ class Pet(models.Model):
     breed = models.CharField(max_length=50, blank=False, default='')
     color = models.CharField(max_length=50, blank=False, default='')
     gender = models.CharField(max_length=50, blank=False, default='')
+    age = models.SmallIntegerField()
 
     def __str__(self):
         return self.name
