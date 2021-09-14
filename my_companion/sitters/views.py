@@ -1,6 +1,6 @@
 from django.http.response import Http404
 from django.shortcuts import render
-from rest_framework.serializers import Serializer
+from rest_framework.serializers import serializer
 from .models import Sitter
 from .serilizers import SitterSerializer
 from rest_framework.views import APIView
