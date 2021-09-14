@@ -1,6 +1,6 @@
 from django.http.response import Http404
 from django.shortcuts import render
-from rest_framework.serializers import serializer
+from rest_framework.serializers import Serializer
 from .models import Sitter
 from .serilizers import SitterSerializer
 from rest_framework.views import APIView
@@ -23,7 +23,7 @@ class SitterList(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class SitterDetail(APIView):
-
+    
     def get_object(self, pk):
         try:
             return Sitter.objects.get(pk=pk)
