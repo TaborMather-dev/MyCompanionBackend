@@ -78,6 +78,9 @@ WSGI_APPLICATION = 'my_companion.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+AUTH_USER_MODEL = 'accounts.User'
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
